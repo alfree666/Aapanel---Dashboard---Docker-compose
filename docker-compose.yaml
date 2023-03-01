@@ -7,17 +7,17 @@ services:
         container_name: aapanel
         restart: unless-stopped        
         ports:
-            - '8886:8888'
-            - '22:21'
+            - '8200:7800'
+            - '21:21'
             - '443:443'
             - '80:80'
-            - '889:888'
+            - '888:888'
         volumes:
             - ./website_data:/www/wwwroot
             - ./mysql_data:/www/server/data
             - ./vhost:/www/server/panel/vhost
             
-            
+          
 
 
 
